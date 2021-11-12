@@ -1,0 +1,297 @@
+
+<html>
+    <head>
+      <title>Exodus</title>
+      <link rel="stylesheet" href="../../css/index.css" />
+      <link rel="stylesheet" href="../../css/planet.css" />
+      <link rel="icon" href="../../image/logo2.png" type="image/icon type" />
+    </head>
+  
+    <body>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="../../image/logo2.png" alt="logo" /></a>
+        </div>
+        <div class="navbar">
+          <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+  
+          <ul id="nav-lists">
+            <li class="close" id="close"><span onclick="Hide()">×</span></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../destinations.html">Destinations</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../procedure.html">Procedure</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="outer-container">
+        <div class="img-container">
+          <img src="../../image/1.jpg" class="planet-img" />
+        </div>
+      </div>
+      <div class="planet-name" id="p-name">Zathura Name</div>
+      <div class="planet-about">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales
+        magna vel vulputate porta. Curabitur rutrum dolor quis lacus mattis, sit
+        amet iaculis nunc pulvinar. Maecenas quis eros eget dui viverra auctor.
+        Integer id arcu nec massa accumsan commodo. In in semper ipsum. Praesent
+        id pellentesque tortor, non venenatis nisl. Ut sed congue dui, in viverra
+        ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        Pellentesque bibendum vulputate sem quis dictum. Aliquam ornare sodales
+        nibh, non dignissim eros vestibulum vitae. Vivamus lobortis, leo quis
+        molestie luctus, mi sapien ultrices turpis, sed efficitur augue sem in
+        velit. Quisque dictum ultricies risus eget dignissim. Curabitur fringilla
+        orci vel dolor semper elementum. Aenean pretium nibh ut nunc tempus, eu
+        pulvinar dui sodales. Sed in laoreet diam, in interdum urna.
+        <br /><br />
+        Aliquam fringilla volutpat magna sit amet rhoncus. Curabitur gravida elit
+        id elit imperdiet, non faucibus tortor feugiat. Aliquam dapibus mollis
+        felis, sit amet tristique justo ultricies eu. Pellentesque dictum quam sit
+        amet lectus sagittis dignissim. Fusce vel libero ornare, maximus quam in,
+        ullamcorper nibh. Proin rhoncus eget orci ac dignissim. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Aenean gravida justo ac
+        dolor mattis euismod. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Cras
+        eget suscipit enim. Aenean at feugiat tortor. Sed aliquam, nibh non
+        sagittis luctus, odio justo elementum quam, eget accumsan orci nibh vel
+        dolor.
+        <br /><br />
+  
+        Mauris sagittis erat vel ullamcorper tempor. Mauris pellentesque augue
+        quis nibh fermentum, maximus tincidunt neque viverra. Phasellus auctor
+        risus dolor, vitae tempor justo commodo ut. Aliquam eu ultrices turpis.
+        Nunc magna nibh, rhoncus at ex vitae, sollicitudin ultrices urna. Cras a
+        magna quis nisl ornare ultrices ut vitae mi. Aliquam quis laoreet arcu, id
+        pharetra tellus. Nam nec urna elementum, condimentum ligula suscipit,
+        feugiat ligula.
+        <br /><br />
+        <div class="btn-container">
+          <a href="#popup1">
+            <button class="book-btn">Book Your Seat Now!</button>
+          </a>
+        </div>
+  
+        <div id="popup1" class="overlay">
+          <div id="pop">
+            <div class="popup">
+              <h2 id="popup-h">Book Your Ticket</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content" id="modal-box">
+                <form onsubmit="submitForm(event)">
+                  <div class="form-row">
+                    <div class="form-inline">
+                      <input
+                        class="book-input"
+                        type="text"
+                        placeholder="Name"
+                        name="name"
+                        id="nameInput"
+                        required
+                      />
+                    </div>
+                    <div class="form-inline">
+                      <input
+                        class="book-input"
+                        type="email"
+                        placeholder="Email Address"
+                        name="email"
+                        id="emailInput"
+                        required
+  
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-inline">
+                      <input
+                        class="book-input"
+                        type="number"
+                        placeholder="Mobile Number"
+                        name="number"
+                        id="numberInput"
+                        required
+  
+                      />
+                    </div>
+                    <div class="form-inline">
+                      <input
+                        class="book-input"
+                        type="number"
+                        placeholder="Number of Passengers"
+                        name="passenger"
+                        id="passengerInput"
+                        required
+  
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-inline">
+                      <textarea
+                        class="book-input"
+                        placeholder="Address"
+                        name="address"
+                        rows="4"
+                        id="addressInput"
+                        required
+  
+                      ></textarea>
+                    </div>
+                    <div class="form-inline">
+                      <textarea
+                        class="book-input"
+                        placeholder="Briefly Mention How You Can Contribute To Community on Planet 1"
+                        name="contri"
+                        rows="4"
+                        required
+  
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-inline info">Departure From: Earth</div>
+                    <div class="form-inline info">Arrival To: Planet 1</div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-inline">
+                        <select name="ticket" id="ticketInput" class="book-input" required >
+                        <option value="">Select the ticket category</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Business">Business</option>
+                        <option value="Premium">Premium</option>
+                      </select>
+                    </div>
+                    <div class="form-inline">
+                      <select
+                        class="book-input"
+                        id="serviceInput"
+                        name="services"
+                        required
+                      >
+                        <option value="">Select our services package</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-inline">
+                      <label>Choose Departure Date:</label>
+                      <input type="date" class="book-input" id="date-input" required/>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <button type="submit" class="book-submit">Book Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script>
+              // var today = new Date();
+              // var dd = today.getDate();
+              // var mm = today.getMonth() + 1; //January is 0!
+              // var yyyy = today.getFullYear();
+  
+              // if (dd < 10) {
+              //   dd = "0" + dd;
+              // }
+  
+              // if (mm < 10) {
+              //   mm = "0" + mm;
+              // }
+  
+              today = '2100-01-01';
+              document.getElementById("date-input").setAttribute("min", today);
+              JS;
+  
+              function submitForm(event) {
+                event.preventDefault();
+                var header = document.getElementById("popup-h");
+                var name = document.getElementById("nameInput");
+                var email = document.getElementById("emailInput");
+                var mobile = document.getElementById("numberInput");
+                var passenger = document.getElementById("passengerInput");
+                var address = document.getElementById("addressInput");
+                var ticket = document.getElementById("ticketInput");
+                var services = document.getElementById("serviceInput");
+                var date = document.getElementById("date-input");
+                var modalBox = document.getElementById("modal-box");
+                header.innerHTML =  `${services.value} Tier Receipt `;
+                if(services.value=="Gold"){
+        header.style.color = 'gold';        
+      }
+                if(services.value=="Silver"){
+  
+                  header.style.color = 'silver';        }
+              
+                if(services.value=="Bronze"){
+                  header.style.color = 'brown';        }
+                
+                var cost = 0;
+                var t_cost=0;
+                var s_cost=0
+                if (ticket.value == "Economy") {
+                  t_cost += 1000;
+                } else if (ticket.value == "Business") {
+                  t_cost += 1500;
+                } else if (ticket.value == "Premium") {
+                  t_cost += 2000;
+                }
+                if (services.value == "Bronze") {
+                  s_cost += 800;
+                } else if (services.value == "Silver") {
+                  s_cost += 1200;
+                } else if (services.value == "Gold") {
+                  s_cost += 1800;
+                } else if (services.value == "Platinum") {
+                  s_cost += 2200;
+                }
+  
+                cost = (t_cost + s_cost) * 2.5;
+                modalBox.innerHTML = `
+                <div id="modalBox">
+                  <div class="container1">
+                <div class="receipt-row">${name.value}</div>
+                <div class="receipt-row">${mobile.value}</div>
+                <div class="receipt-row">${passenger.value} passengers</div>
+                    </div>
+                    <div class="container2">
+                <div class="receipt-row">Departure From: Earth</div>
+                <div class="receipt-row">Destination: Planet 1</div>
+                <div class="receipt-row">Date Of Departure: ${date.value}</div>
+  
+                </div>
+                <div class="container3">
+                <div class="receipt-row"> ${ticket.value} Ticket</div>
+                <div class="receipt-row">Tickets Cost: $${2.5*t_cost}</div>
+                <div class="receipt-row">Services Cost: $${2.5*s_cost}</div>
+                <div class="receipt-row">$${cost}</div>
+                </div>
+                </div>
+                `;
+              }
+      </script>
+      <script>
+        var navList = document.getElementById("nav-lists");
+        function Show() {
+          navList.classList.add("_Menus-show");
+        }
+  
+        function Hide() {
+          navList.classList.remove("_Menus-show");
+        }
+      </script>
+    </body>
+  </html>
+  
