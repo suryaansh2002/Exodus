@@ -1,4 +1,4 @@
-.proc-h {
+.serv {
   color: white;
   font-weight: 700;
   font-size: 2.5rem;
@@ -7,6 +7,7 @@
   justify-content: center;
   margin-top: 5rem;
 }
+
 .box {
   border-radius: 20px;
   padding: 1rem;
@@ -16,6 +17,7 @@
   color: white;
   margin-left: 10%;
 }
+
 
 .box ul li {
   font-size: 1.2rem;

@@ -2,12 +2,12 @@
   <head>
     <title>Exodus</title>
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="icon" href="../image/logo.png" type="image/icon type" />
+    <link rel="icon" href="../image/logo2.png" type="image/icon type" />
   </head>
 
   <body>
-    <nav class="navbar">
-      <a href="./index.html">
+    <!-- <nav class="navbar">
+      < <a href="./index.html">
         <img class="logo" src="../image/logo.png" />
       </a>
       <div class="nav-right">
@@ -16,9 +16,33 @@
         <a href="./procedure.html" class="nav-link">Procedure</a> |
         <a href="./contact.html" class="nav-link">Contact</a>
       </div>
-    </nav>
+      </nav> -->
+    <!-- <div class="stars"><img src="../image/stars.png" class="star"></div> -->
     <div class="container">
-      <div class="heading-1">Voyager Travels</div>
+      <div class="logo">
+        <a href="#"><img src="../image/logo2.png" alt="logo" /></a>
+      </div>
+      <div class="navbar">
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+
+        <ul id="nav-lists">
+          <li class="close" id="close"><span onclick="Hide()">×</span></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./destinations.html">Destinations</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./procedure.html">Procedure</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+ <div class="container2">
+      <div class="heading-1">VOYAGER TRAVELS</div>
+   <div><img src="../image/logo2.png" class="landing-logo" /></div>
       <div class="heading-2">
         As the need for space travel grows continously, we are here to cater to
         your space-travel needs.<br />
@@ -33,33 +57,17 @@
         <button id="myBtn" class="apply-button">
           Choose Your Destination Now!
         </button>
-      </a>
+      </a> 
     </div>
     <script>
-      var modal = document.getElementById("myModal");
+      var navList = document.getElementById("nav-lists");
+      function Show() {
+        navList.classList.add("_Menus-show");
+      }
 
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks on the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
+      function Hide() {
+        navList.classList.remove("_Menus-show");
+      }
     </script>
   </body>
 </html>
