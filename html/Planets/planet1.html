@@ -3,36 +3,6 @@
     <title>Exodus</title>
     <link rel="stylesheet" href="../../css/index.css" />
     <link rel="stylesheet" href="../../css/planet.css" />
-    <!-- <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://html2canvas.hertzen.com/dist/html2canvas.js"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/root/utils/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="/root/utils/jsPDF-master1/jspdf.plugin.standard_fonts_metrics.js"></script>
-    <script type="text/javascript" src="/root/utils/jsPDF-master1/jspdf.plugin.split_text_to_size.js"></script>
-
-    <script type="text/javascript" src="/root/utils/jsPDF-master1/js/basic.js"></script>
-    <script type="text/javascript" src="/root/utils/jsPDF-master1/jspdf.js"></script>
-    <script type="text/javascript" src="/root/utils/jsPDF-master1/jspdf.plugin.from_html.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $("p").click(function () {
-          alert("The paragraph was clicked.");
-        });
-
-        $("#btnDownload").click(function () {
-          console.log("in function");
-          var element = document.querySelector("#pop");
-          saveCapture(element);
-        });
-      });
-    </script> -->
   </head>
 
   <body>
@@ -52,7 +22,6 @@
     </div>
     <div class="planet-name" id="p-name">Planet 1 Name</div>
     <div class="planet-about">
-      <p>Click</p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales
       magna vel vulputate porta. Curabitur rutrum dolor quis lacus mattis, sit
       amet iaculis nunc pulvinar. Maecenas quis eros eget dui viverra auctor.
@@ -87,10 +56,11 @@
       pharetra tellus. Nam nec urna elementum, condimentum ligula suscipit,
       feugiat ligula.
       <br /><br />
-
-      <a href="#popup1">
-        <button class="book-">Book Your Seat Now!</button>
-      </a>
+      <div class="btn-container">
+        <a href="#popup1">
+          <button class="book-btn">Book Your Seat Now!</button>
+        </a>
+      </div>
 
       <div id="popup1" class="overlay">
         <div id="pop">
@@ -160,7 +130,7 @@
                 </div>
                 <div class="form-row">
                   <div class="form-inline info">Departure From: Earth</div>
-                  <div class="form-inline info">Arrival To: Panet 1</div>
+                  <div class="form-inline info">Arrival To: Planet 1</div>
                 </div>
                 <div class="form-row">
                   <div class="form-inline">
@@ -238,7 +208,7 @@
           cost += 1000;
         } else if (ticket.value == "Business") {
           cost += 1500;
-        } else if (ticket.value == "Business") {
+        } else if (ticket.value == "Premium") {
           cost += 2000;
         }
         if (services.value == "Bronze") {
@@ -265,54 +235,9 @@
         <div class="receipt-row">Services Categoy: ${services.value}</div>
         <div class="receipt-row">Date Of Departure: ${date.value}</div>
         <div class="receipt-row">Total Cost: $${cost}</div>
-       <!-- <div class="receipt-row" ><button class="download-btn" id="btnDownload" onclick="Download()" >Download Receipt</button></div>-->
         </div>
-    <div id="editor"></div>
         `;
       }
-      // function download(url) {
-      //   console.log(" IN D ");
-
-      //   var a = document.createElement("a");
-      //   a.setAttribute("href", url);
-      //   a.setAttribute("download", "test.png");
-
-      //   // ("<a style='display:none' id='js-downloder'>")
-      //   //   .attr("href", url)
-      //   //   .attr("download", "test.png")
-      //   //   .appendTo("body");
-      //   a.click();
-
-      //   a.remove();
-      // }
-
-      // function saveCapture(element) {
-      //   console.log(" IN SC ");
-
-      //   html2canvas(element).then(function (canvas) {
-      //     console.log(canvas);
-      //     console.log(canvas.toDataURL("image/png"));
-      //     download(canvas.toDataURL("image/png"));
-      //   });
-      // }
-
-    //   var doc = new jsPDF();
-    //   var specialElementHandlers = {
-    //     "#editor": function (element, renderer) {
-    //       return true;
-    //     },
-    //   };
-
-    //  function Download () {
-    //   console.log("in d")
-    //     doc.fromHTML($("#pop").html(), 15, 15, {
-    //       width: 170,
-    //       elementHandlers: specialElementHandlers,
-    //     });
-    //    console.log("done d")
-
-    //     doc.save("sample-file.pdf");
-    //   };
     </script>
   </body>
 </html>

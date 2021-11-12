@@ -23,15 +23,15 @@
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.list-button{
-    border-radius: 5px;
-    padding: 0.5rem;
-    color: white;
-    background-color: rgb(0, 0, 0, 0.8);
-    border: none;
-    font-size: 1.1rem;
-    margin:0rem 0.5rem;
+.list-button {
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.8);
+  border: none;
+  font-size: 1.1rem;
+  margin: 0rem 0.5rem;
 }
-.list-button:hover{
-    cursor: pointer;
+.list-button:hover {
+  cursor: pointer;
 }
