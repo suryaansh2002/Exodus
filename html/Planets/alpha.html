@@ -35,12 +35,23 @@
     </div>
     <div class="planet-name" id="p-name">Alpha287</div>
     <div class="planet-about">
-      A perfect place for you if you love nature!This planets is filled with varieties of flora and fauna that you will never find on any other planet!!!<br>
-            Terain: Mountains,plains<br>
-            Average Temperature: 13-22°C<br>
-            Length of the day: 26 standard hours<br>
-            Species: Zacks<br>
-            Rainfall: 60mm(Annual)
+      <div>
+        <p>
+        A perfect place for you if you love nature! This planets is filled with
+        varieties of flora and fauna that you will never find on any other
+        planet!!!
+      </p>
+      </div>
+
+      <div>
+        <p>
+      Terain: Mountains,plains<br />
+      Average Temperature: 13-22°C<br />
+      Length of the day: 26 standard hours<br />
+      Species: Zacks<br />
+      Rainfall: 600mm(Annual)
+    </p>
+    </div>
       <div class="btn-container">
         <a href="#popup1">
           <button class="book-btn">Book Your Seat Now!</button>
@@ -73,7 +84,6 @@
                       name="email"
                       id="emailInput"
                       required
-
                     />
                   </div>
                 </div>
@@ -86,7 +96,6 @@
                       name="number"
                       id="numberInput"
                       required
-
                     />
                   </div>
                   <div class="form-inline">
@@ -97,7 +106,6 @@
                       name="passenger"
                       id="passengerInput"
                       required
-
                     />
                   </div>
                 </div>
@@ -110,27 +118,30 @@
                       rows="4"
                       id="addressInput"
                       required
-
                     ></textarea>
                   </div>
                   <div class="form-inline">
                     <textarea
                       class="book-input"
-                      placeholder="Briefly Mention How You Can Contribute To Community on Planet 1"
+                      placeholder="Briefly Mention How You Can Contribute To Community on Alpha287"
                       name="contri"
                       rows="4"
                       required
-
                     ></textarea>
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-inline info">Departure From: Earth</div>
-                  <div class="form-inline info">Arrival To: Planet 1</div>
+                  <div class="form-inline info">Arrival To: Alpha287</div>
                 </div>
                 <div class="form-row">
                   <div class="form-inline">
-                      <select name="ticket" id="ticketInput" class="book-input" required >
+                    <select
+                      name="ticket"
+                      id="ticketInput"
+                      class="book-input"
+                      required
+                    >
                       <option value="">Select the ticket category</option>
                       <option value="Economy">Economy</option>
                       <option value="Business">Business</option>
@@ -155,7 +166,12 @@
                 <div class="form-row">
                   <div class="form-inline">
                     <label>Choose Departure Date:</label>
-                    <input type="date" class="book-input" id="date-input" required/>
+                    <input
+                      type="date"
+                      class="book-input"
+                      id="date-input"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="form-row">
@@ -169,68 +185,69 @@
     </div>
 
     <script>
-            // var today = new Date();
-            // var dd = today.getDate();
-            // var mm = today.getMonth() + 1; //January is 0!
-            // var yyyy = today.getFullYear();
+      // var today = new Date();
+      // var dd = today.getDate();
+      // var mm = today.getMonth() + 1; //January is 0!
+      // var yyyy = today.getFullYear();
 
-            // if (dd < 10) {
-            //   dd = "0" + dd;
-            // }
+      // if (dd < 10) {
+      //   dd = "0" + dd;
+      // }
 
-            // if (mm < 10) {
-            //   mm = "0" + mm;
-            // }
+      // if (mm < 10) {
+      //   mm = "0" + mm;
+      // }
 
-            today = '2100-01-01';
-            document.getElementById("date-input").setAttribute("min", today);
-            JS;
+      today = "2100-01-01";
+      document.getElementById("date-input").setAttribute("min", today);
+      JS;
 
-            function submitForm(event) {
-              event.preventDefault();
-              var header = document.getElementById("popup-h");
-              var name = document.getElementById("nameInput");
-              var email = document.getElementById("emailInput");
-              var mobile = document.getElementById("numberInput");
-              var passenger = document.getElementById("passengerInput");
-              var address = document.getElementById("addressInput");
-              var ticket = document.getElementById("ticketInput");
-              var services = document.getElementById("serviceInput");
-              var date = document.getElementById("date-input");
-              var modalBox = document.getElementById("modal-box");
-              header.innerHTML =  `${services.value} Tier Receipt `;
-              if(services.value=="Gold"){
-      header.style.color = 'gold';        
-    }
-              if(services.value=="Silver"){
+      function submitForm(event) {
+        event.preventDefault();
+        var header = document.getElementById("popup-h");
+        var name = document.getElementById("nameInput");
+        var email = document.getElementById("emailInput");
+        var mobile = document.getElementById("numberInput");
+        var passenger = document.getElementById("passengerInput");
+        var address = document.getElementById("addressInput");
+        var ticket = document.getElementById("ticketInput");
+        var services = document.getElementById("serviceInput");
+        var date = document.getElementById("date-input");
+        var modalBox = document.getElementById("modal-box");
+        header.innerHTML = `${services.value} Tier Receipt `;
+        if (services.value == "Gold") {
+          header.style.color = "gold";
+        }
+        if (services.value == "Silver") {
+          header.style.color = "silver";
+        }
 
-                header.style.color = 'silver';        }
-            
-              if(services.value=="Bronze"){
-                header.style.color = 'brown';        }
-              
-              var cost = 0;
-              var t_cost=0;
-              var s_cost=0
-              if (ticket.value == "Economy") {
-                t_cost += 1000;
-              } else if (ticket.value == "Business") {
-                t_cost += 1500;
-              } else if (ticket.value == "Premium") {
-                t_cost += 2000;
-              }
-              if (services.value == "Bronze") {
-                s_cost += 800;
-              } else if (services.value == "Silver") {
-                s_cost += 1200;
-              } else if (services.value == "Gold") {
-                s_cost += 1800;
-              } else if (services.value == "Platinum") {
-                s_cost += 2200;
-              }
+        if (services.value == "Bronze") {
+          header.style.color = "brown";
+        }
 
-              cost = (t_cost + s_cost) * 2.5;
-              modalBox.innerHTML = `
+        var cost = 0;
+        var t_cost = 0;
+        var s_cost = 0;
+        if (ticket.value == "Economy") {
+          t_cost += 1000;
+        } else if (ticket.value == "Business") {
+          t_cost += 1500;
+        } else if (ticket.value == "Premium") {
+          t_cost += 2000;
+        }
+        if (services.value == "Bronze") {
+          s_cost += 800;
+        } else if (services.value == "Silver") {
+          s_cost += 1200;
+        } else if (services.value == "Gold") {
+          s_cost += 1800;
+        } else if (services.value == "Platinum") {
+          s_cost += 2200;
+        }
+
+        cost = (t_cost + s_cost) * 2.5;
+        modalBox.innerHTML = `
               <div id="modalBox">
                 <div class="container1">
               <div class="receipt-row">${name.value}</div>
@@ -239,19 +256,19 @@
                   </div>
                   <div class="container2">
               <div class="receipt-row">Departure From: Earth</div>
-              <div class="receipt-row">Destination: Planet 1</div>
+              <div class="receipt-row">Destination: Alpha287</div>
               <div class="receipt-row">Date Of Departure: ${date.value}</div>
 
               </div>
               <div class="container3">
               <div class="receipt-row"> ${ticket.value} Ticket</div>
-              <div class="receipt-row">Tickets Cost: $${2.5*t_cost}</div>
-              <div class="receipt-row">Services Cost: $${2.5*s_cost}</div>
+              <div class="receipt-row">Tickets Cost: $${2.5 * t_cost}</div>
+              <div class="receipt-row">Services Cost: $${2.5 * s_cost}</div>
               <div class="receipt-row">$${cost}</div>
               </div>
               </div>
               `;
-            }
+      }
     </script>
     <script>
       var navList = document.getElementById("nav-lists");

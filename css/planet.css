@@ -187,7 +187,8 @@ select {
 
 .planet-about {
   font-size: 1.3rem;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   width: 60%;
   margin: 2rem;
