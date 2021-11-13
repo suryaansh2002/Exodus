@@ -9,7 +9,18 @@
 #nav-lists{
   margin-left: auto;
 }
-body {
+.boy-img{
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  width: 12rem;
+}
+.girl-img{
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 12rem;
+}body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -178,6 +189,11 @@ body {
   cursor: pointer;
   transform: scale(1.05);
 }
+@media only screen and (max-width: 1000px) {
+.boy-img,.girl-img{
+  width: 8rem;
+}
+}
 @media only screen and (max-width: 900px) {
 .heading-1{
   font-size: 4.5rem;
@@ -208,6 +224,12 @@ body {
   }  
 }
 @media only screen and (max-width: 520px) {
+  .boy-img{
+    left: 0px;
+  }
+  .girl-img{
+    right: 0px;
+  }
   .heading-1{
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -223,7 +245,8 @@ body {
     margin-left: 5%;
   }  
   .apply-button{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -244,6 +267,7 @@ body {
   }  
   .apply-button{
     font-size: 0.9rem;
+    margin-top: 0;
   }
 }
 
