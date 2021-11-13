@@ -36,12 +36,22 @@
       </div>
       <div class="planet-name" id="p-name">Beta303</div>
       <div class="planet-about">
-        The most commercial planet in the universe! Shopoholic gang! What are you waiting for?!<br>
+        <div>
+          <p>
+            The most commercial planet in the universe! Shopoholic gang! What are you waiting for?!<br>
+            
+          </p>
+        </div>
+        <div>
+          <p>
             Terain: Plateaus<br>
             Average Temperature: 25-31°C<br>
             Length of the day: 31 standard hours<br>
             Species: Kimberleys<br>
             Rainfall: 55mm(Annual)
+            
+          </p>
+        </div>
         <br /><br />
         <div class="btn-container">
           <a href="#popup1">
@@ -118,7 +128,7 @@
                     <div class="form-inline">
                       <textarea
                         class="book-input"
-                        placeholder="Briefly Mention How You Can Contribute To Community on Planet 1"
+                        placeholder="Briefly Mention How You Can Contribute To Community on Beta303"
                         name="contri"
                         rows="4"
                         required
@@ -128,7 +138,7 @@
                   </div>
                   <div class="form-row">
                     <div class="form-inline info">Departure From: Earth</div>
-                    <div class="form-inline info">Arrival To: Planet 1</div>
+                    <div class="form-inline info">Arrival To: Beta303</div>
                   </div>
                   <div class="form-row">
                     <div class="form-inline">
@@ -150,7 +160,6 @@
                         <option value="Bronze">Bronze</option>
                         <option value="Silver">Silver</option>
                         <option value="Gold">Gold</option>
-                        <option value="Platinum">Platinum</option>
                       </select>
                     </div>
                   </div>
@@ -215,21 +224,19 @@
                 var t_cost=0;
                 var s_cost=0
                 if (ticket.value == "Economy") {
-                  t_cost += 1000;
+                  t_cost += 1200;
                 } else if (ticket.value == "Business") {
-                  t_cost += 1500;
+                  t_cost += 1600;
                 } else if (ticket.value == "Premium") {
-                  t_cost += 2000;
+                  t_cost += 2500;
                 }
                 if (services.value == "Bronze") {
-                  s_cost += 800;
+                  s_cost += 1100;
                 } else if (services.value == "Silver") {
-                  s_cost += 1200;
+                  s_cost += 1400;
                 } else if (services.value == "Gold") {
-                  s_cost += 1800;
-                } else if (services.value == "Platinum") {
-                  s_cost += 2200;
-                }
+                  s_cost += 2000;
+                } 
   
                 cost = (t_cost + s_cost) * 2.5;
                 modalBox.innerHTML = `
@@ -241,7 +248,7 @@
                     </div>
                     <div class="container2">
                 <div class="receipt-row">Departure From: Earth</div>
-                <div class="receipt-row">Destination: Planet 1</div>
+                <div class="receipt-row">Destination: Beta303</div>
                 <div class="receipt-row">Date Of Departure: ${date.value}</div>
   
                 </div>
@@ -249,7 +256,7 @@
                 <div class="receipt-row"> ${ticket.value} Ticket</div>
                 <div class="receipt-row">Tickets Cost: $${2.5*t_cost}</div>
                 <div class="receipt-row">Services Cost: $${2.5*s_cost}</div>
-                <div class="receipt-row">$${cost}</div>
+                <div class="receipt-row">Total Cost $${cost}</div>
                 </div>
                 </div>
                 `;

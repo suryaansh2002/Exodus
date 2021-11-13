@@ -28,6 +28,7 @@
   border-radius: 15px;
   padding: 0.8rem;
   margin: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-textarea {
   background: transparent;
@@ -54,6 +55,10 @@
   color: white;
   cursor: pointer;
   transform: scale(1.03);
+}
+
+textarea::placeholder{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width: 660px) {

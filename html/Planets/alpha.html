@@ -159,7 +159,6 @@
                       <option value="Bronze">Bronze</option>
                       <option value="Silver">Silver</option>
                       <option value="Gold">Gold</option>
-                      <option value="Platinum">Platinum</option>
                     </select>
                   </div>
                 </div>
@@ -242,8 +241,6 @@
           s_cost += 1200;
         } else if (services.value == "Gold") {
           s_cost += 1800;
-        } else if (services.value == "Platinum") {
-          s_cost += 2200;
         }
 
         cost = (t_cost + s_cost) * 2.5;
@@ -264,7 +261,7 @@
               <div class="receipt-row"> ${ticket.value} Ticket</div>
               <div class="receipt-row">Tickets Cost: $${2.5 * t_cost}</div>
               <div class="receipt-row">Services Cost: $${2.5 * s_cost}</div>
-              <div class="receipt-row">$${cost}</div>
+              <div class="receipt-row">Total Cost: $${cost}</div>
               </div>
               </div>
               `;

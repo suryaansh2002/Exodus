@@ -228,3 +228,14 @@ textarea {
   cursor: pointer;
   transform: scale(1.05);
 }
+
+textarea::placeholder{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date::placeholder{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+  color: #fff;
+}
