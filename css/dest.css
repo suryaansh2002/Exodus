@@ -56,31 +56,31 @@
 }
 
 @media only screen and (max-width: 680px) {
-.dest-h{
-  font-size: 2rem;
-}
+  .dest-h {
+    font-size: 2rem;
+  }
 }
 @media only screen and (max-width: 520px) {
-.dest-h{
-  font-size: 1.8rem;
-}
+  .dest-h {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
-.dest-h{
-  font-size: 1.5rem;
-}
-.card{
-  width: 19rem;
-  margin:1rem auto;
-}
-.image{
-  width: 19rem;
-}
-.card-title{
-  font-size: 1.5rem;
-}
-.card-about{
-font-size: 00.95rem;
-}
+  .dest-h {
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 19rem;
+    margin: 1rem auto;
+  }
+  .image {
+    width: 19rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-about {
+    font-size: 00.95rem;
+  }
 }

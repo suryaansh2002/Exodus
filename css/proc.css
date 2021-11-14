@@ -37,43 +37,41 @@
 }
 
 @media only screen and (max-width: 860px) {
-.box{
-  width: 90%;
-  margin-left:5% ;
-}
-.box ul li {
-font-size: 1.1rem;
-
-}
-}
-@media only screen and (max-width: 520px) {
-  .box{
-    width: 95%;
-    margin-left:2.5% ;
+  .box {
+    width: 90%;
+    margin-left: 5%;
   }
   .box ul li {
-  font-size: 1rem;
-  padding: 0.5rem;
+    font-size: 1.1rem;
   }
-.proc-h {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
-.list-button {
-font-size: 1rem;
-
-}
 }
 @media only screen and (max-width: 520px) {
-.box ul li{
-  font-size: 1rem;
+  .box {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  .box ul li {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .proc-h {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+  .list-button {
+    font-size: 1rem;
+  }
 }
-.list-button {
-font-size: 0.95rem;
-padding: 0.3rem;
-}
-.box{
-  margin: 1%;
-}
+@media only screen and (max-width: 520px) {
+  .box ul li {
+    font-size: 1rem;
+  }
+  .list-button {
+    font-size: 0.95rem;
+    padding: 0.3rem;
+  }
+  .box {
+    margin: 1%;
+  }
 }

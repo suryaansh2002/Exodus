@@ -4,7 +4,7 @@ h1 {
   color: #06d85f;
   margin: 80px 0;
 }
-.book-img{
+.book-img {
   width: 5rem;
   position: absolute;
   top: -10px;
@@ -99,29 +99,30 @@ h1 {
   width: 100%;
   margin: 0.3rem 0rem;
 }
-.container1,.container2,.container3{
+.container1,
+.container2,
+.container3 {
   border: 1px solid white;
   padding: 0.5rem;
   width: 40%;
   display: inline-block;
-  border-radius:20px;
+  border-radius: 20px;
   padding-left: 1.5rem;
-  margin: 0rem 0.5rem
+  margin: 0rem 0.5rem;
 }
 
-.container3{
+.container3 {
   margin-top: 2rem;
 }
-.gold{
+.gold {
   color: gold;
 }
-.silver{
+.silver {
   color: silver;
 }
-.bronze{
+.bronze {
   color: brown;
 }
-
 
 .book-input {
   background-color: transparent;
@@ -185,7 +186,7 @@ select {
 .planet-about {
   font-size: 1.3rem;
   font-size: 1.2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   width: 60%;
   margin: 2rem;
@@ -226,159 +227,156 @@ textarea {
   transform: scale(1.05);
 }
 
-textarea::placeholder{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+textarea::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.date::placeholder{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.date::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-input{
+input {
   color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
-.popup{
-  width: 80%;
-}
+  .popup {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 910px) {
-  .popup{
+  .popup {
     width: 90%;
   }
-  
-  }
+}
 @media only screen and (max-width: 900px) {
-.planet-about{
-  width: 90%;
-  margin-left: 5%;
+  .planet-about {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .planet-img {
+    width: 35rem;
+    height: 21rem;
+  }
+  .book-input {
+    width: 17rem;
+  }
+  .receipt-row {
+    font-size: 0.95rem;
+  }
 }
-.planet-img{
- width: 35rem; 
- height:21rem;
-}
-.book-input{
-  width: 17rem;
-}
-.receipt-row{
-  font-size: 0.95rem;
-}
-}
-
-
 
 @media only screen and (max-width: 720px) {
-.book-input{
-  width: 15rem;
-}
-.container1,.container2,.container3{
-display: block;
-width: 80%;
-font-size: 1.1rem;
-margin-left: 10%;
-text-align: center;
-align-items: center;
-justify-content: center;
-}
-.container2,.container{
-  margin-top: 1rem;
-}
-.popup h2 {
-font-size: 1.6rem;
-}
+  .book-input {
+    width: 15rem;
+  }
+  .container1,
+  .container2,
+  .container3 {
+    display: block;
+    width: 80%;
+    font-size: 1.1rem;
+    margin-left: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .container2,
+  .container {
+    margin-top: 1rem;
+  }
+  .popup h2 {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (max-width: 620px) {
-.popup{
-  margin-top:01.5rem;
-}
-.overlay{
-  position:absolute;
-}
-.book-input{
-  width: 80%;
-  font-size:0.9rem;
-  display: block;
-  margin-left:10%;
-}
+  .popup {
+    margin-top: 01.5rem;
+  }
+  .overlay {
+    position: absolute;
+  }
+  .book-input {
+    width: 80%;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: 10%;
+  }
 
-.form-inline{
-  display:block;
-  text-align:center;
-  width:100%;
-  align-items:center;
-
+  .form-inline {
+    display: block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .info {
+    font-size: 0.9rem;
+  }
+  .outer-container {
+    overflow: hidden;
+  }
 }
-.info{
-  font-size:0.9rem;
-}
-.outer-container{
-  overflow:hidden;
-}
-}
-
 
 @media only screen and (max-width: 600px) {
-.planet-img{
-  width:90%;
-height: auto;
-}
-.planet-about{
-  font-size: 1rem;
-}
-.planet-name{
-  font-size: 2rem;
-}
-.book-btn{
-  font-size: 1rem;
-  padding: 0.8rem;
-  margin-top: 1rem;
-}
+  .planet-img {
+    width: 90%;
+    height: auto;
+  }
+  .planet-about {
+    font-size: 1rem;
+  }
+  .planet-name {
+    font-size: 2rem;
+  }
+  .book-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 520px) {
-  .planet-about{
+  .planet-about {
     font-size: 0.9rem;
     margin-top: 0px;
   }
-  .planet-name{
+  .planet-name {
     font-size: 1.9rem;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     margin-top: 2rem;
   }
-  .book-input
-  {
+  .book-input {
     width: 95%;
     margin-left: 0;
     margin-bottom: 15px;
   }
   .popup h2 {
     font-size: 1.3rem;
-    }
-    .book-img{
-      width: 4rem;
-      position: absolute;
-      top: -8px;
-      left: -8px;
-    }
-    
+  }
+  .book-img {
+    width: 4rem;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+  }
 }
 @media only screen and (max-width: 420px) {
-.book-input{
-  width: 100%;
-}
-.container1,.container2,.container3{
-  display: block;
-  width: 95%;
-  font-size: 1.1rem;
-  margin-left: 2.5%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  .book-input {
+    width: 100%;
   }
-  
+  .container1,
+  .container2,
+  .container3 {
+    display: block;
+    width: 95%;
+    font-size: 1.1rem;
+    margin-left: 2.5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.book-input:focus{
+.book-input:focus {
   outline: none;
 }

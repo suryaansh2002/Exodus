@@ -49,16 +49,14 @@
   font-size: 1.6rem;
   font-weight: 700;
   margin: 1rem 0.5rem;
-
 }
 .bronze {
   color: brown;
   font-size: 1.6rem;
   font-weight: 700;
   margin: 1rem 0.5rem;
-
 }
-.tier-info{
+.tier-info {
   font-size: 1.2rem;
   font-weight: 500;
   margin-left: 1rem;
@@ -107,14 +105,15 @@
     margin-top: 1rem;
   }
 
-  .gold,.silver,.bronze{
+  .gold,
+  .silver,
+  .bronze {
     font-size: 1.4rem;
     margin-bottom: 1rem;
   }
-  .info{
+  .info {
     font-size: 1rem;
   }
-  
 }
 @media only screen and (max-width: 520px) {
   .box .tier-info {
@@ -123,11 +122,12 @@
   .box {
     margin: 1%;
   }
-  .gold,.silver,.bronze{
+  .gold,
+  .silver,
+  .bronze {
     font-size: 1.3rem;
-    
   }
-  .tier-info{
+  .tier-info {
     margin-left: 0rem;
   }
 }
