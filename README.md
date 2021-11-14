@@ -8,5 +8,5 @@ With the expanse of the space time continuum, the need for space travel agencies
 Plan a trip for your customers showcasing destinations and flight option along with prices and services offered. 
 There should be a final receipt that shows flight details and total price clearly.
 
-Worked on this site along with [Trisha7781] (https://github.com/Trisha7781)
+Worked on this site along with [Trisha7781](https://github.com/Trisha7781)
 
